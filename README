@@ -1,0 +1,16 @@
+== emoticon: A library for transcoding Japanese mobile phones' emoticons (emoji)
+
+This library has been extracted and refactored from Jpmobile, a rails plugin
+for handling Japanese mobile phones.  Most of the code in this library was
+written for Jpmobile.  Once this library is mature, I hope to merge it back
+into Jpmobile.
+
+== Jpmobileの作者 / Author of Jpmobile
+
+Project Website: http://jpmobile-rails.org
+
+Copyright 2006 (c) Yohji Shidara, under MIT License.
+
+Yohji Shidara <dara@shidara.net>
+
+http://d.hatena.ne.jp/darashi
