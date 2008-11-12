@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "emoticon"
-  s.version  = "0.0.2"
+  s.version  = "0.0.3"
   s.date     = "2008-11-12"
   s.summary  = "Emoticon (emoji) handling for Japanese mobile phones"
   s.email    = "paul@tokyodev.com"
