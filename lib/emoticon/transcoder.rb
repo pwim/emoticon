@@ -1,10 +1,12 @@
 require "emoticon/conversion_table"
 require 'scanf'
 require "kconv"
+require "singleton"
 
 module Emoticon
   class Transcoder
     include Emoticon::ConversionTable
+    include Singleton
 
     def unicodecr_to_external(str)
       str.gsub(/&#x([0-9a-f]{4});/i) do |match|

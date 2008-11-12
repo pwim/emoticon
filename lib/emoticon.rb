@@ -6,9 +6,9 @@ module Emoticon
   def self.transcoder_for_carrier(carrier)
     name = carrier.capitalize
     if Transcoder.const_defined?(name)
-      Transcoder.const_get(name).new
+      Transcoder.const_get(name).instance
     else
-      Transcoder::Null.new
+      Transcoder::Null.instance
     end
   end
 end
