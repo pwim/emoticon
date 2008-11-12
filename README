@@ -5,6 +5,16 @@ for handling Japanese mobile phones.  Most of the code in this library was
 written for Jpmobile.  Once this library is mature, I hope to merge it back
 into Jpmobile.
 
+== Author
+
+Once again, I did not do most of the work in creating this library.  Most of
+the credit goes to Yohji Shidara (and any others) who worked on the original
+Jpmobile code.
+
+Paul McMahon
+
+http://github.com/pwim
+
 == Jpmobileの作者 / Author of Jpmobile
 
 Project Website: http://jpmobile-rails.org
