@@ -5,7 +5,7 @@ require "emoticon/transcoder/vodafone"
 
 class VodafoneTest < Test::Unit::TestCase
   def setup
-    @transcoder = Emoticon::Transcoder::Vodafone.new
+    @transcoder = Emoticon::Transcoder::Vodafone.instance
   end
 
   def test_internal_to_external

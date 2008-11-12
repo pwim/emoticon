@@ -5,7 +5,7 @@ require "emoticon/transcoder/jphone"
 
 class JphoneTest < Test::Unit::TestCase
   def setup
-    @transcoder = Emoticon::Transcoder::Jphone.new
+    @transcoder = Emoticon::Transcoder::Jphone.instance
   end
 
   def test_internal_to_external

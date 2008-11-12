@@ -5,7 +5,7 @@ require "emoticon/transcoder/au"
 
 class AuTest < Test::Unit::TestCase
   def setup
-    @transcoder = Emoticon::Transcoder::Au.new
+    @transcoder = Emoticon::Transcoder::Au.instance
   end
 
   def test_internal_to_external

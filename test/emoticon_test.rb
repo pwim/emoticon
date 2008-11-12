@@ -10,5 +10,7 @@ class EmoticonTest < Test::Unit::TestCase
     assert_instance_of(Emoticon::Transcoder::Jphone, Emoticon.transcoder_for_carrier("jphone"))
     assert_instance_of(Emoticon::Transcoder::Null, Emoticon.transcoder_for_carrier("emobile"))
     assert_instance_of(Emoticon::Transcoder::Null, Emoticon.transcoder_for_carrier("willcom"))
+    assert_instance_of(Emoticon::Transcoder::Null, Emoticon.transcoder_for_carrier(""))
+    assert_instance_of(Emoticon::Transcoder::Null, Emoticon.transcoder_for_carrier(nil))
   end
 end

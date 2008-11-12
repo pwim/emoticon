@@ -11,6 +11,13 @@ class Emoticon::Transcoder::Docomo < Emoticon::Transcoder
     end
   end
 
+  def sjiscr_to_unicodecr(s)
+    s.gsub(/&#([0-9]{5});/i) do |match|
+      unicode = DOCOMO_SJIS_TO_UNICODE[$1.to_i].to_s(16).upcase
+      "&#x#{unicode};"
+    end
+  end
+
   private
 
   def to_sjis

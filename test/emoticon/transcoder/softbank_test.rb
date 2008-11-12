@@ -5,7 +5,7 @@ require "emoticon/transcoder/softbank"
 
 class SoftbankTest < Test::Unit::TestCase
   def setup
-    @transcoder = Emoticon::Transcoder::Softbank.new
+    @transcoder = Emoticon::Transcoder::Softbank.instance
   end
 
   def test_internal_to_external
