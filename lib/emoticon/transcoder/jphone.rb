@@ -16,10 +16,4 @@ class Emoticon::Transcoder::Jphone < Emoticon::Transcoder::Softbank
       unicode ? ("&#x%04x;"%unicode) : match
     end
   end
-
-  private
-
-  def to_sjis
-    true
-  end
 end

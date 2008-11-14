@@ -13,6 +13,10 @@ class Emoticon::Transcoder::Softbank < Emoticon::Transcoder
 
   private
 
+  def to_sjis
+    true
+  end
+  
   def conversion_table
     CONVERSION_TABLE_TO_SOFTBANK
   end
