@@ -11,7 +11,7 @@ class SoftbankTest < Test::Unit::TestCase
   def test_internal_to_external
     assert_equal "\e$Gj\x0f", @transcoder.internal_to_external(DOCOMO_CR)
     assert_equal "\e$Gj\x0f", @transcoder.internal_to_external(DOCOMO_UTF8)
-    assert_equal "［ドコモポイント］".tosjis, @transcoder.internal_to_external(DOCOMO_DOCOMO_POINT)
+    assert_equal "\e$EO\017", @transcoder.internal_to_external(DOCOMO_DOCOMO_POINT)
     assert_equal "\e$Gj\x0f", @transcoder.internal_to_external(AU_CR)
     assert_equal "\e$Gj\x0f", @transcoder.internal_to_external(AU_UTF8)
     assert_equal "\e$Gj\x0f", @transcoder.internal_to_external(SOFTBANK_CR)

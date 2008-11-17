@@ -11,7 +11,7 @@ class AuTest < Test::Unit::TestCase
   def test_internal_to_external
     assert_equal "\xf6\x60", @transcoder.internal_to_external(DOCOMO_CR)
     assert_equal "\xf6\x60", @transcoder.internal_to_external(DOCOMO_UTF8)
-    assert_equal "［ドコモポイント］".tosjis, @transcoder.internal_to_external(DOCOMO_DOCOMO_POINT)
+    assert_equal "\xf6\xa0", @transcoder.internal_to_external(DOCOMO_DOCOMO_POINT)
     assert_equal "\xf6\x60", @transcoder.internal_to_external(AU_CR)
     assert_equal "\xf6\x60", @transcoder.internal_to_external(AU_UTF8)
     assert_equal "\xf6\x60", @transcoder.internal_to_external(SOFTBANK_CR)
